@@ -26,6 +26,7 @@ import {
 	ShoppingCart,
 	ShoppingCartIcon,
 } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 interface Agents {
 	id: number;
@@ -291,11 +292,11 @@ const agents: Agents[] = [
 function page() {
 	return (
 		<div>
-			<div className="mt-16 flex flex-wrap gap-6 justify-center items-center">
+			<div className="mt-36 flex flex-wrap gap-6 justify-center items-center">
 				{agents.map((agent) => (
-					<div
+					<Card
 						key={agent.name}
-						className="bg-white dark:bg-black rounded-md shadow-lg p-6 max-w-sm w-full  hover:shadow-xl"
+						className="bg-white dark:bg-gray-950 rounded-md shadow-lg p-6 max-w-sm w-full  hover:shadow-xl"
 					>
 						<div className="mb-4">
 							<Image
@@ -342,7 +343,7 @@ function page() {
 								</Button>
 							</div>
 						</div>
-					</div>
+					</Card>
 				))}
 			</div>
 		</div>
