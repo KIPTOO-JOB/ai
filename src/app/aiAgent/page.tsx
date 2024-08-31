@@ -19,6 +19,13 @@ import customer_insights from "../../../public/images/customer-insights.jpg";
 import retail_optimizer from "../../../public/images/retail-optimizer.jpg";
 import content_creator from "../../../public/images/content-creator.jpg";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+	LucideShoppingBag,
+	ShoppingBag,
+	ShoppingCart,
+	ShoppingCartIcon,
+} from "lucide-react";
 
 interface Agents {
 	id: number;
@@ -316,6 +323,24 @@ function page() {
 									{feature}
 								</span>
 							))}
+						</div>
+						<div className=" flex items-center justify-center mt-5 gap-3">
+							<div className=" cursor-pointer ">
+								<Button className="gap-2 flex-row-reverse font-bold ">
+									{" "}
+									<LucideShoppingBag />
+									Buy Now
+								</Button>
+							</div>
+							<div>
+								<Button
+									variant="outline"
+									className=" gap-2 flex-row-reverse font-bold 
+									"
+								>
+									<ShoppingCart /> Add To Cart
+								</Button>
+							</div>
 						</div>
 					</div>
 				))}
