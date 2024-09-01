@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { ArrowBigDown, ArrowDown } from "lucide-react";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 function Hero() {
 	return (
@@ -22,7 +23,7 @@ function Hero() {
 					<Button className=" p-10 rounded-2xl gap-5 text-white dark:text-black   font-light  w-fit text-lg flex-row ">
 						EXPLORE OUR AI AGENTS
 						<span className=" animate-bounce backdrop:blur-sm bg-black/15 p-2 rounded-full">
-							<ArrowDown />{" "}
+							<ArrowRightIcon />{" "}
 						</span>
 					</Button>
 				</Link>
